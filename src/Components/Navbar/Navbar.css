@@ -1,0 +1,110 @@
+.nav {
+    display: flex;
+    padding-inline: 100px;
+    justify-content: space-between;
+    background-color: black;
+    height: 12vh;
+}
+.nav .logo,
+.nav .nav_links {
+    margin-top: 20px;
+}
+.nav .btn {
+    margin-top: 10px;
+}
+.nav .logo {
+    color: white;
+    text-shadow: 1.5px 1.5px;
+    font-size: 22px;
+}
+.nav .nav_links ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.nav .nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav .nav_links a:hover {
+    color: gold;
+}
+.nav .btn button {
+    background: gold;
+    border: none;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav .btn button:hover {
+    background: goldenrod;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .nav {
+        padding-inline: 50px;
+    }
+    .nav .logo {
+        font-size: 20px;
+    }
+    .nav .nav_links ul {
+        gap: 15px;
+    }
+    .nav .nav_links a {
+        font-size: 22px;
+    }
+    .nav .btn button {
+        width: 120px;
+        height: 45px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 20px;
+    }
+    .nav .logo {
+        font-size: 18px;
+    }
+    .nav .nav_links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav .nav_links a {
+        font-size: 20px;
+    }
+    .nav .btn button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding-inline: 10px;
+    }
+    .nav .logo {
+        font-size: 16px;
+    }
+    .nav .nav_links ul {
+        gap: 8px;
+    }
+    .nav .nav_links a {
+        font-size: 18px;
+    }
+    .nav .btn button {
+        width: 90px;
+        height: 35px;
+        font-size: 11px;
+    }
+}

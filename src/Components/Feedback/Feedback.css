@@ -1,0 +1,112 @@
+/* Base styles */
+.feedback {
+    padding: 5px 85px;
+    margin-top: 350px;
+}
+.feedback h5,
+.feedback h3 {
+    text-align: center;
+}
+.feedback h5 {
+    font-size: 20px;
+}
+.feedback h3 {
+    font-size: 35px;
+    margin-top: 15px;
+}
+.feedback .customers {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+.feedback .customers .item {
+    background: goldenrod;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px); /* Responsive width */
+    box-sizing: border-box;
+    margin-bottom: 30px; /* Add margin-bottom for spacing */
+}
+.feedback .customers .item:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.feedback .customers .item .rating:hover {
+    color: #006b6a;
+    font-size: 22px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+.feedback .customers .item .user:hover {
+    color: gold;
+    transition: color 0.3s ease;
+}
+.feedback .customers .item p {
+    line-height: 22px;
+    font-size: 14px;
+}
+.feedback .customers .item .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.feedback .customers .item .user img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.feedback .customers .item .user h5 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.feedback .customers .item .user p {
+    font-size: 12px;
+}
+.feedback .customers .comment h2 {
+    color: gold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .feedback {
+        padding: 5px 40px;
+    }
+    .feedback .customers .item {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        padding: 5px 20px;
+    }
+    .feedback .customers .item {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+    .feedback h3 {
+        font-size: 28px;
+    }
+    .feedback h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback {
+        padding: 5px 10px;
+    }
+    .feedback h3 {
+        font-size: 24px;
+    }
+    .feedback h5 {
+        font-size: 16px;
+    }
+}

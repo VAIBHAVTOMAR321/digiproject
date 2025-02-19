@@ -1,0 +1,141 @@
+.about {
+    display: flex;
+    padding-inline: 100px;
+    justify-content: space-between;
+    height: 90vh;
+    margin-top: 90px;
+    gap: 60px;
+}
+.about .left img {
+    width: 500px;
+    height: 600px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.about .right h3 {
+    font-size: 30px;
+}
+.about .right h3:hover,
+.about .right h1:hover,
+.about .right .text:hover {
+    color: gold; /* Change the text color on hover */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+.about .right h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+.about .right .text {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.about .about_listing {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+.about .about_listing .about_list {
+    display: flex;
+    gap: 40px;
+}
+.about_list .icon h2 {
+    font-size: 25px;
+    position: absolute;
+}
+.about_list .icon .design {
+    content: '';
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: gold;
+    margin-left: -5px;
+    margin-top: -5px;
+    z-index: -1;
+    border-radius: 50%;
+}
+.about_listing .about_list .list_txt h2 {
+    font-size: 18px;
+}
+.about_listing .about_list .list p {
+    margin-top: 5px;
+}
+.right button {
+    background: black;
+    border: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .about {
+        padding-inline: 50px;
+    }
+    .about .left img {
+        width: 400px;
+        height: 500px;
+    }
+    .about .right h1 {
+        font-size: 35px;
+    }
+    .about .right h3 {
+        font-size: 25px;
+    }
+    .about .right .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 20px;
+    }
+    .about .left img {
+        width: 100%;
+        height: auto;
+    }
+    .about .right h1 {
+        font-size: 30px;
+    }
+    .about .right h3 {
+        font-size: 20px;
+    }
+    .about .right .text {
+        font-size: 12px;
+    }
+    .about .about_listing {
+        grid-template-columns: 1fr;
+    }
+    .about .about_listing .about_list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding-inline: 10px;
+    }
+    .about .right h1 {
+        font-size: 25px;
+    }
+    .about .right h3 {
+        font-size: 18px;
+    }
+    .about .right .text {
+        font-size: 10px;
+    }
+    .right button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
