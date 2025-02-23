@@ -9,8 +9,8 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer_content">
             <div className="content_left">
-                <h2>Web And Wander Solution</h2>
-                <p>Web And Wander Solution is dedicated to providing top-notch digital marketing and web development services. Our mission is to help businesses grow and succeed in the digital world through innovative solutions and expert guidance.</p>
+                <h2>Web And Wander Solutions</h2>
+                <p>Web And Wander Solutions is dedicated to providing top-notch digital marketing and web development services. Our mission is to help businesses grow and succeed in the digital world through innovative solutions and expert guidance.</p>
                 <div className="footer_social-icons">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                         <img src={facebook} alt="Facebook" />
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="footer_content_right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>+23499686548</li>
+                    <li>+91 8766219989</li>
                     <li>webwandersolution@gmail.com</li>
                 </ul>
             </div>

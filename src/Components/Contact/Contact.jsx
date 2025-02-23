@@ -17,15 +17,15 @@ const Contact = () => {
             <div className="contact_details">
               <div className="detail">
               {/* <FaEnvelope /> */}
-                <p>webwandersolution</p>
+                <p>webwandersolutions</p>
               </div>
               <div className="detail">
               {/* <FaPhone /> */}
-                <p>+234678900</p>
+                <p>+91 8766219989</p>
               </div>
               <div className="detail">
               {/* <FaLocationDot /> */}
-                <p>Los Angeles, California</p>
+                <p>Chakrata Road , Chukkuwala , Dehradun</p>
               </div>
             </div>
         </div>
