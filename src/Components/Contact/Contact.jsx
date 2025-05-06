@@ -35,7 +35,7 @@ const Contact = () => {
               </div>
               <div className="detail">
                 {/* <FaPhone /> */}
-                <p>+91 8766219989</p>
+                <p>+91 </p>
               </div>
               <div className="detail">
                 {/* <FaLocationDot /> */}
