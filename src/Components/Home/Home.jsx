@@ -19,7 +19,7 @@ const Home = () => {
             <h1>We Build Rapid Solution For Your Business</h1>
             <p className="white">Let's start something big together, lets increase your revenue using our expert knowledge for your business</p>
             <div className="btns">
-                <button>Schedule Call With +91 8291749273</button>
+                <button>Schedule Call With +91 </button>
             </div>
         </div>
         <div class="right">
