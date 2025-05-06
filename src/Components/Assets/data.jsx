@@ -8,7 +8,6 @@ export const navlinks = [
     { id:1 , title : 'Home', link: '#home'},
     { id:1 , title : 'About', link: '#about'},
     { id:1 , title : 'Service', link: '#service'},
-    { id:1 , title : 'Blog', link: '#blog'}
 ]
 export const about = [
     {
